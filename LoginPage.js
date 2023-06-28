@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './LoginPage.css';
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({
@@ -17,11 +18,11 @@ const LoginPage = () => {
   };
 
   return (
-    <div>
+    <div className="login-container">
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <label>
-          Email:
+          Email
           <input
             type="email"
             name="email"
@@ -32,7 +33,7 @@ const LoginPage = () => {
         </label>
         <br />
         <label>
-          Password:
+          Password
           <input
             type="password"
             name="password"
@@ -49,3 +50,4 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
+
